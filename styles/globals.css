@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.Main{
+  display: flex;
+  flex-direction: column;
+
+  background-Color:rgb(11, 24, 68)
+}

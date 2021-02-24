@@ -1,0 +1,101 @@
+.Cover_Box{
+    position: absolute;
+    overflow: hidden;
+}
+
+.Cover_blur{
+
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../public/pic/Cover.jpg');
+    width: 100%;
+    height: 100vh;
+
+    filter: blur(8px);
+
+    z-index: 0;
+
+    transform: scale(1.1);
+    
+}
+
+.Cover{
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+
+    z-index: 1;
+
+    
+}
+
+@keyframes wide{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.Cover_logo{
+    font-weight: bold;
+    font-size: 8vmax;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+
+    border-top: 0.5vmax solid white;
+    border-bottom: 0.5vmax solid white;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 10vmax;
+    padding-bottom: 1vmax;
+
+    margin-bottom: 30px;
+
+    animation: 1s wide ease-in-out;
+    
+}
+
+.Cover_Search{
+    margin-bottom: 20px;
+    animation: 1.2s wide ease-in-out;
+}
+
+.Cover_SearchBar{
+    color: white !important;
+    transition: width 1s !important;
+    width: 200px;
+    &:hover{    
+        width: 300px;
+    }
+
+
+}
+
+
+.Cover_button{
+    color: white !important;
+    border-color: white !important;
+
+    &:hover{
+        color: rgba($color: #000000, $alpha: 0.5) !important;
+        border-color: rgba($color: #000000, $alpha: 0.5) !important;
+    }
+
+    animation: 1.4s wide ease-in-out;
+}
