@@ -9,21 +9,34 @@
     align-items: center;
     z-index: 1;
 
+    margin-top: 20px;
+
 }
 
 .Header_SearchBar{
     color : white !important;
 }
 
+
 .Header_logo{
-    
-    font-size: 20px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    color : white;
-    width: 5vmax;
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+
+    border-top: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+
+    min-width: 2.2em !important;
+    height: 1.2em;
+    color : white !important;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    border-radius: 0% !important;
+
+    padding: 0px !important;
+    padding-top: 2px !important;
 
     animation: 0.5s wide ease-in-out;
 }
@@ -35,7 +48,7 @@
     flex-direction: column;
     
     width: 100%;
-    height: 40vmax;
+    height: 15em;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,7 +82,7 @@
     animation: 1s wide ease-in-out;
 }
 
-.Login_Button{
+.Header_Login_Button{
     color: gray !important;
     border:1px solid gray !important;
 
@@ -86,4 +99,8 @@
         color: rgba($color: #000000, $alpha: 0.5);
     }
 
+}
+
+.Header_menus{
+    color: white !important;
 }
